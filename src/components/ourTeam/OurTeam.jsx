@@ -12,7 +12,17 @@ const OurTeam=()=>{
             </div>
             <div className="flex flex-col gap-3">
          <Row justify={"center"} gutter={[40,40]}>
-            <Col xxl={12} xl={12} md={12} sm={24} xs={24}>
+            <Col  xxl={12} xl={12} md={12} sm={24} xs={24}>
+            <div className="flex justify-center">
+                <div className="flex flex-col items-center gap-3">
+                <div className="md:!h-[500px] md:!w-[500px]">
+                <Image className="!h-full !w-full rounded-full" preview={false} src={rafi}/>
+                </div>
+                <CustomText className={"!text-[30px] font-semibold"} value={"Rafi ahmad"}/>
+                </div>
+            </div>
+            </Col>
+              <Col xxl={12} xl={12} md={12} sm={24} xs={24}>
             <div className="flex justify-center">
                 <div className="flex flex-col items-center gap-3">
                 <div className="md:!h-[500px] md:!w-[500px]">
@@ -22,7 +32,11 @@ const OurTeam=()=>{
                 </div>
             </div>
             </Col>
-             <Col  xxl={12} xl={12} md={12} sm={24} xs={24}>
+             
+            
+         </Row>
+          <Row justify={"center"} className="pt-5">
+         <Col  xxl={12} xl={12} md={12} sm={24} xs={24}>
               <div className="flex justify-center">
                 <div className="flex flex-col items-center gap-3">
                 <div className="md:!h-[500px] md:!w-[500px]">
@@ -30,19 +44,6 @@ const OurTeam=()=>{
                 </div>
                 <CustomText className={"!text-[30px] font-semibold"} value={"Vikram Singh"}/>
             </div>
-            </div>
-            </Col>
-            
-         </Row>
-          <Row justify={"center"} className="pt-5">
-            <Col  xxl={12} xl={12} md={12} sm={24} xs={24}>
-            <div className="flex justify-center">
-                <div className="flex flex-col items-center gap-3">
-                <div className="md:!h-[500px] md:!w-[500px]">
-                <Image className="!h-full !w-full rounded-full" preview={false} src={rafi}/>
-                </div>
-                <CustomText className={"!text-[30px] font-semibold"} value={"Rafi ahmad"}/>
-                </div>
             </div>
             </Col>
              <Col  xxl={12} xl={12} md={12} sm={24} xs={24}>

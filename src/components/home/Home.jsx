@@ -3,10 +3,10 @@ import OurWorkSector from "./homeSection/OurWorkSector";
 
 const Home = () => {
   return (
-    <div >
+    <>
      <HomeSlider/>
      <OurWorkSector/>
-    </div>
+     </>
   );
 };
 

@@ -2,7 +2,7 @@ import AboutUs from "../components/aboutus/AboutUs";
 
 const AboutUsPage=()=>{
     return(
-        <div className="pt-[200px]">
+        <div className="pt-[170px]">
         <AboutUs/>
         </div>
     )

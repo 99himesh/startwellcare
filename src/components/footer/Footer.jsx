@@ -1,42 +1,74 @@
-import { Col, Image, Row } from "antd";
-import logo from "../../assets/header/logo.jpeg"
-import CustomText from "../common/CustomText";
-import {FacebookOutlined, InstagramOutlined} from  '@ant-design/icons';
-const Footer=()=>{
-    return(
-        <div className="bg-[#3e6d67] p-2 mt-5">
-            <div className="md:w-[1440px] mx-auto  h-[50px] ">
-        <Row justify={"center"}>
-            <Col span={6}>
-            <div className="flex items-center pt-1">            
-                  <Image className="!size-[40px]" preview={false} src={logo}/>
-            </div>
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router";
+const Footer = () => {
+  return (
+    <footer className="bg-gray-100 text-gray-800">
+      <div className="container mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Column 1 - About */}
+        <div className="space-y-3">
+          <h3 className="font-semibold text-lg text-[#3b91c5]">
+            Starwell Care Foundation
+          </h3>
+          <p className="text-sm text-gray-600">
+            Starwell Care Foundation works towards social welfare, helping
+            communities through education, health support, and social
+            development initiatives.
+          </p>
+        </div>
 
-            </Col>
-            <Col span={12}>
-                <div className="flex justify-between items-center pt-3">
-                    <div>
-                    <CustomText className={"!text-[#fff] !text-[14px]"} value={"Gmail :- "}/>
-                    <CustomText className={"!text-[#fff] font-semibold !text-[16px]"} value={"starwellcarefoundation@gmail.com"}/>
-                    </div>
-                    <div>
-                        <CustomText className={"!text-[#fff] !text-[14px]"}  value={"Contact :- "}/>
-                        <CustomText className={"!text-[#fff] font-bold !text-[16px]"} value={"8400897257"}/>
-                    </div>
-                </div>
-            </Col>
-           
-            <Col span={6}>
-                <div className="flex gap-2 justify-center  items-center pt-3">
-                  <InstagramOutlined style={{color:"#fff",fontSize:"20px"}}/>
-                  <FacebookOutlined style={{color:"#fff",fontSize:"20px"}}/>
-                  {/* <InstagramOutlined style={{color:"#fff",fontSize:"20px"}}/>
-                  <InstagramOutlined style={{color:"#fff",fontSize:"20px"}}/> */}
-                </div>
-            </Col>
-        </Row>
+        {/* Column 2 - Quick Links */}
+        <div className="space-y-3">
+          <h3 className="font-semibold text-lg">Quick Links</h3>
+          <div className="flex flex-col gap-3">
+            <Link to={"/"} className="cursor-pointer hover:text-[#3b91c5]">
+              Home
+            </Link>
+            <Link to={"/about"} className="cursor-pointer hover:text-[#3b91c5]">
+              About Us
+            </Link>
+            <Link
+              to={"/our-team"}
+              className="cursor-pointer hover:text-[#3b91c5]"
+            >
+              Our Work
+            </Link>
+          </div>
         </div>
+
+        {/* Column 3 - Programs */}
+        <div className="space-y-3">
+          <h3 className="font-semibold text-lg">Our Programs</h3>
+          <p>Education Support</p>
+          <p>Healthcare Initiatives</p>
+          <p>Food Donation</p>
+          <p>Cloth Donation</p>
         </div>
-    )
-}
+
+        {/* Column 4 - Contact */}
+        <div className="space-y-4">
+          <h3 className="font-semibold text-lg">Contact Us</h3>
+
+          <div className="flex items-center gap-2">
+            <MdEmail />
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=starwellcarefoundation@gmail.com"
+              class="!text-[#000] hover:text-[#fff]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              starwellcarefoundation@gmail.com
+            </a>
+          </div>
+
+          <p className="text-sm">📞 90268 30902</p>
+
+          <p className="text-xs text-gray-500 pt-2">
+            © 2026 Starwell Care Foundation .
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
 export default Footer;
