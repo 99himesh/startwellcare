@@ -8,11 +8,11 @@ import TopHeader from "./TopHearder";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
- <div className="fixed w-full z-50">
+ <div className="fixed w-full z-50  " >
   <TopHeader/>
     <nav className="bg-white">
       <div className="container mx-auto ">
-        <div className="flex justify-between py-2 items-center">
+        <div className="flex justify-between py-2 items-center px-2">
 
           {/* Logo */}
           <div className="size-[120px]">

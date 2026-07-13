@@ -3,19 +3,26 @@ import CustomText from "../../common/CustomText";
 import ourwork1 from "../../../assets/ourWork/ourWork1.jpeg";
 import Home8 from "../../../assets/home/home8.jpeg";
 import Blood from "../../../assets/ourwork/blood1.jpeg";
+import reportHelp from "../../../assets/ourwork/report.jpeg"
+import Home1 from "../../../assets/home/home1.jpeg";
+
 const OurWorkSector = () => {
   const ourWork = [
     {
       title: "Food Donation",
       image: ourwork1,
     },
+    // {
+    //   title: "Medical",
+    //   image: Blood,
+    // },
     {
-      title: "Medical",
-      image: Blood,
+      title: "Blind Support",
+      image: Home1,
     },
     {
-      title: "Cloth Donation",
-      image: Home8,
+      title: "Help",
+      image: reportHelp,
     },
   ];
   return (
@@ -33,7 +40,7 @@ const OurWorkSector = () => {
             <Col xxl={8} xl={8} lg={12} md={24} sm={24} xs={24} >
               <Card hoverable cover={
                 <>
-                <img className="md:h-[500px] h-[300px] !w-full object-cover" preview={false} alt="example" src={item?.image} />
+                <Image className="md:!h-[500px] h-[300px] !w-full object-cover" alt="example" src={item?.image} />
                 <CustomText className={"!text-[18px] font-bold !text-center items-center pt-4"} value={item?.title}/>
                 </>
               }>

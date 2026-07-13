@@ -4,9 +4,9 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Home1 from "../../../assets/home/home1.jpg";
-import Home2 from "../../../assets/home/home4.jpg";
-import Home3 from "../../../assets/home/home5.jpg";
+import Home1 from "../../../assets/home/home1.jpeg";
+import Home2 from "../../../assets/home/home4.jpeg";
+import Home3 from "../../../assets/home/home5.jpeg";
 
 const HomeSlider = () => {
   const images = [Home1, Home2, Home3];
